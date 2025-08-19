@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utsav Singh Portfolio Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="{% static 'js/script.js' %}" defer></script>
+</head>
+
+<body>
+    <div class="spotlight"></div>
+    <div class="container">
+        <div class="layout">
+            <!-- Left: Sticky header, nav, social -->
+            <header class="header">
+                <div class="header-content">
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="https://github.com/Utsav-Singh-35" class="social-icon" aria-label="GitHub">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon" style="width: 24px; height: 24px; object-fit: contain; filter: invert(1);">
+                        </a>
+                        <a href="https://linkedin.com/in/utsav-singh-11400a329" class="social-icon" aria-label="LinkedIn">
+                            <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn" class="icon" style="width: 24px; height: 24px; object-fit: contain;">
+                        </a>
+                        <a href="https://g.dev/UtsavSingh" class="social-icon" aria-label="g.dev">
+                            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Developer" class="icon" style="width: 24px; height: 24px; object-fit: contain;">
+                        </a>
+                        <a href="mailto:us101741@email.com" class="social-icon" aria-label="Email">
+                            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Email" class="icon" style="width: 24px; height: 24px; object-fit: contain;">
+                        </a>
+                        <a href="https://leetcode.com/u/Singh_Utsav/" class="social-icon" aria-label="LeetCode">
+                            <img src="https://leetcode.com/_next/static/images/logo-dark-c96c407d175e36c81e236fcfdd682a0b.png" alt="LeetCode" class="icon" style="width: 24px; height: 24px; object-fit: contain;">
+                        </a>
+                        <a href="https://www.geeksforgeeks.org/user/us1017vva/" class="social-icon" aria-label="GeeksforGeeks">
+                            <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="GeeksforGeeks" class="icon" style="width: 24px; height: 24px; object-fit: contain;">
+                        </a>
+                    </div>
+                    <div class="header-text">
+                        <h1 class="name">Utsav Singh</h1>
+                        <h2 class="title">Software Engineer </h2> 
+                        <a href="https://drive.google.com/file/d/1PlHXEHWt4mFJhDQNWHwJMXbAzOCKBU03/view?usp=sharing" target="_blank" rel="noopener" style="text-decoration: none;">
+                            <p style="font-weight: 700; color: #a1d2ff; margin-top: 0.5rem; font-size: 1.1rem;">RESUME</p>
+                        </a>
+                        <p class="description">Computer engineering student skilled in DSA, full-stack development, and collaborative problem-solving projects.</p>
+                    </div>
+                </div>
+                <!-- Desktop nav -->
+                <nav class="nav" aria-label="In-page jump links">
+                    <ul class="nav-list">
+                        <li><a class="nav-link active" href="#about">
+                                <span class="nav-indicator"></span>
+                                <span class="nav-text">About</span>
+                            </a></li>
+                        <li><a class="nav-link" href="#skills">
+                                <span class="nav-indicator"></span>
+                                <span class="nav-text">Skills</span>
+                            </a></li>
+                        <!-- <li><a class="nav-link" href="#experience">
+                                <span class="nav-indicator"></span>
+                                <span class="nav-text">Experience</span>
+                            </a></li> -->
+                        <li><a class="nav-link" href="#projects">
+                                <span class="nav-indicator"></span>
+                                <span class="nav-text">Projects</span>
+                            </a></li>
+                        <li><a class="nav-link" href="#experience">
+                                <span class="nav-indicator"></span>
+                                <span class="nav-text">Achievements</span>
+                            </a></li>
+                        <li><a class="nav-link" href="#contact">
+                                <span class="nav-indicator"></span>
+                                <span class="nav-text">Contact</span>
+                            </a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- Right: Main content -->
+            <main id="content" class="main-content">
+                <!-- About Section -->
+                <section id="about" class="section fade-up" aria-label="About me">
+                    <h2 class="section-title">About</h2>
+                    <!-- <div class="section-content" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                        <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">
+                            I'm a passionate developer and computer engineering student with a strong foundation in <span
+                                class="highlight">Data Structures</span>, <span class="highlight">Algorithms</span>, and
+                            <span class="highlight">full-stack development</span>. I thrive on transforming complex
+                            problems into intuitive, high-performance web applications using technologies like <span
+                                class="highlight">Django</span>, <span class="highlight">JavaScript</span>, and <span
+                                class="highlight">Python</span>.
+                        </p>
+
+                        <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">
+                            Currently, I'm focused on building robust backend systems and responsive user interfaces that
+                            prioritize both functionality and user experience. My projects often involve seamless
+                            integration of <span class="highlight">frontend</span> and <span
+                                class="highlight">backend</span>, secure <span class="highlight">authentication</span>,
+                            and <span class="highlight">database</span>-driven interactions.</p>
+
+                        <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">
+                            I've contributed to real-world applications such as <span class="highlight">online study
+                                platforms</span> and <span class="highlight">event management systems</span>, while
+                            continuously enhancing my skills through certifications and coding platforms like <span
+                                class="highlight">LeetCode</span> and <span class="highlight">GeeksforGeeks</span>.</p>
+
+                        <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">
+                            I'm also deeply interested in the fields of <span class="highlight">Artificial Intelligence</span> and <span class="highlight">Machine Learning</span>. I am actively learning to build intelligent systems using Python-based libraries and exploring real-world use cases such as predictive models, classification systems, and data-driven decision-making.
+                        </p>
+
+                        <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">
+                            In addition, I'm gaining hands-on experience with <span class="highlight">Cloud Computing</span> platforms like <span class="highlight">AWS</span> and <span class="highlight">Google Cloud</span>, focusing on deploying scalable web applications and leveraging cloud services for storage, compute, and AI workflows.
+                        </p>
+
+                        <p style="color: #94a3b8; line-height: 1.6;">
+                            Beyond coding, I enjoy participating in <span class="highlight">hackathons</span>, pitching
+                            innovative <span class="highlight">tech ideas</span>, and exploring the intersection of
+                            software development and impactful user experiences.</p>
+                    </div> -->
+
+                    <div class="section-content" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                        <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">
+                            I'm a computer engineering student and full-stack developer with a strong grasp of <span class="highlight">DSA</span>, <span class="highlight">Python</span>, and <span class="highlight">Django</span>. I enjoy building scalable web apps that combine clean design with efficient backend systems.
+                        </p>
+                    
+                        <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">
+                            I'm currently deepening my expertise in <span class="highlight">AI</span> and <span class="highlight">Machine Learning</span>, focusing on real-world applications like predictive modeling and intelligent automation using Python-based tools.
+                        </p>
+                    
+                        <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">
+                            I'm also exploring <span class="highlight">Cloud Computing</span> with platforms like <span class="highlight">AWS</span> and <span class="highlight">GCP</span> to deploy and scale modern applications using cloud-native services.
+                        </p>
+                    
+                        <p style="color: #94a3b8; line-height: 1.6; margin-bottom: 1rem;">
+                            I've worked on a range of real-world projects including <span class="highlight">StudyBud</span>, a full-stack Django application for collaborative study groups, and an <span class="highlight">Event Registration Platform</span> with secure user management and email confirmations. I also helped build a prototype for an <span class="highlight">Unmanned Ground Combat Vehicle (UGCV)</span>, integrating autonomous control systems. Other projects include e-commerce interfaces and terminal-based Java applications demonstrating OOP principles.
+                        </p>
+                    
+                        <p style="color: #94a3b8; line-height: 1.6;">
+                            Passionate about solving problems, I frequently participate in <span class="highlight">hackathons</span>, collaborate on projects, and refine my skills through platforms like <span class="highlight">LeetCode</span> and <span class="highlight">GeeksforGeeks</span>.
+                        </p>
+                    </div>
+                    
+
+                </section>
+
+                <section id="skills" class="section fade-up" aria-label="Technical skills">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                        <div class="card skills-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="card-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>💻</span> Languages
+                            </h3>
+                            <div class="skills-list" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                                <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">Python</span>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">JavaScript</span>
+                                </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">C++</span>
+                            </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">Java</span>
+                            </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">HTML</span>
+                            </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div class="card skills-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="card-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>⚡</span> Frameworks & Libraries
+                            </h3>
+                            <div class="skills-list" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">React</span>
+                            </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">Django</span>
+                            </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div class="card skills-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="card-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>��️</span> Databases
+                            </h3>
+                            <div class="skills-list" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">MySQL</span>
+                            </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">PostgreSQL</span>
+                            </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div class="card skills-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="card-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>🛠️</span> Tools
+                            </h3>
+                            <div class="skills-list" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <div class="skill-item">
+                                    <span class="skill-tag" style="background-color: #0b3d60; color: #a1d2ff;">VS
+                                        Code</span>
+                            </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">Git</span>
+                            </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div class="card skills-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="card-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>📚</span> Core Concepts
+                            </h3>
+                            <div class="skills-list" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <div class="skill-item">
+                                    <span class="skill-tag" style="background-color: #0b3d60; color: #a1d2ff;">Data
+                                        Structures & Algorithms</span>
+                            </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag"
+                                        style="background-color: #0b3d60; color: #a1d2ff;">Object-Oriented Programming
+                                        (OOP)</span>
+                            </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag" style="background-color: #0b3d60; color: #a1d2ff;">Web
+                                        Development</span>
+                            </div>
+                            <div class="skill-item">
+                                    <span class="skill-tag" style="background-color: #0b3d60; color: #a1d2ff;">REST
+                                        APIs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience Section -->
+                <!-- <section id="experience" class="section fade-up" aria-label="Work experience">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="experience-list">
+                        <div class="experience-item">
+                            <div class="card experience-card">
+                                <header class="experience-header">2024 — Present</header>
+                                <div class="experience-content">
+                                    <h3 class="experience-title">
+                                        <a href="#" class="experience-link">Senior Frontend Engineer, Accessibility</a>
+                                    </h3>
+                                    <p class="experience-description">Build and maintain critical components used to
+                                        construct frontend applications, across the whole product. Work closely with
+                                        cross-functional teams, including developers, designers, and product managers,
+                                        to implement and advocate for best practices in web accessibility.</p>
+                                    <ul class="tech-list">
+                                        <li class="tech-item">
+                                            <span class="tech-tag">JavaScript</span>
+                                        </li>
+                                        <li class="tech-item">
+                                            <span class="tech-tag">TypeScript</span>
+                                        </li>
+                                        <li class="tech-item">
+                                            <span class="tech-tag">React</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+
+                <!-- Projects Section -->
+                <section id="projects" class="section fade-up" aria-label="Selected projects">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="projects-container">
+                        <div class="projects-grid">
+                            <!-- StudyBud -->
+                            <div class="project-card">
+                                <img alt="StudyBud Project" 
+                                     loading="lazy" 
+                                     width="200" 
+                                     height="120"
+                                     decoding="async"
+                                     class="project-image"
+                                     src="https://placehold.co/400x300/1d4ed8/fff?text=StudyBud" />
+                                <div class="project-content">
+                                    <h3 class="project-title">
+                                        <a href="https://github.com/Utsav-Singh-35/studybud" 
+                                           class="project-link" 
+                                           target="_blank" 
+                                           rel="noopener">
+                                            StudyBud
+                                        </a>
+                                    </h3>
+                                    <p class="project-description">
+                                        StudyBud is a full-stack Django application that enables students to join study rooms, discuss topics, and collaborate effectively. Features include secure user authentication, topic creation, messaging, and profile management.
+                                    </p>
+                                    <div class="tech-stack" aria-label="Technologies used:">
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">Django</span>
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">SQLite</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Event Registration Platform -->
+                            <div class="project-card">
+                                <img alt="Event Registration Platform" 
+                                     loading="lazy" 
+                                     width="200" 
+                                     height="120"
+                                     decoding="async"
+                                     class="project-image"
+                                     src="https://placehold.co/400x300/1d4ed8/fff?text=Event+Registration" />
+                                <div class="project-content">
+                                    <h3 class="project-title">
+                                        <a href="https://github.com/Utsav-Singh-35" 
+                                           class="project-link" 
+                                           target="_blank" 
+                                           rel="noopener">
+                                            Event Registration Platform
+                                        </a>
+                                    </h3>
+                                    <p class="project-description">
+                                        A responsive event management system allowing participants to sign up, log in, and register for events. Includes features like organizer dashboard, automated confirmation emails, and secure authentication.
+                                    </p>
+                                    <div class="tech-stack" aria-label="Technologies used:">
+                                        <span class="tech-tag">Django</span>
+                                        <span class="tech-tag">Python</span>
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- UGCV -->
+                            <div class="project-card">
+                                <img alt="UGCV Project" 
+                                     loading="lazy" 
+                                     width="200" 
+                                     height="120"
+                                     decoding="async"
+                                     class="project-image"
+                                     src="https://placehold.co/400x300/1d4ed8/fff?text=UGCV" />
+                                <div class="project-content">
+                                    <h3 class="project-title">
+                                        <a href="https://github.com/Utsav-Singh-35" 
+                                           class="project-link" 
+                                           target="_blank" 
+                                           rel="noopener">
+                                            UGCV Prototype
+                                        </a>
+                                    </h3>
+                                    <p class="project-description">
+                                        Developed control logic for a prototype of an Unmanned Combat Ground Vehicle (UGCV). The system features semi-autonomous movement, sensor-driven navigation, and was recognized as a top innovation in a startup pitching competition.
+                                    </p>
+                                    <div class="tech-stack" aria-label="Technologies used:">
+                                        <span class="tech-tag">C++</span>
+                                        <span class="tech-tag">Embedded Systems</span>
+                                        <span class="tech-tag">Microcontrollers</span>
+                                        <span class="tech-tag">Sensors</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- E-Commerce Website -->
+                            <div class="project-card">
+                                <img alt="E-Commerce Website" 
+                                     loading="lazy" 
+                                     width="200" 
+                                     height="120"
+                                     decoding="async"
+                                     class="project-image"
+                                     src="https://placehold.co/400x300/1d4ed8/fff?text=E-Commerce+Site" />
+                                <div class="project-content">
+                                    <h3 class="project-title">
+                                        <a href="https://github.com/Utsav-Singh-35" 
+                                           class="project-link" 
+                                           target="_blank" 
+                                           rel="noopener">
+                                            E-Commerce Website
+                                        </a>
+                                    </h3>
+                                    <p class="project-description">
+                                        A front-end prototype of an e-commerce platform featuring a product catalog, shopping cart, and checkout interface. Designed to demonstrate layout responsiveness and UI design using vanilla HTML and CSS.
+                                    </p>
+                                    <div class="tech-stack" aria-label="Technologies used:">
+                                        <span class="tech-tag">HTML</span>
+                                        <span class="tech-tag">CSS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Achievements Section -->
+                <section id="experience" class="section fade-up" aria-label="Achievements">
+                    <h2 class="section-title">Achievements</h2>
+                    <p class="section-subtitle">
+                        <a href="https://drive.google.com/drive/folders/1xs5rygXlVF_oHTBmbvIKk_Sd_FOYm03U?usp=sharing" 
+                           target="_blank" 
+                           rel="noopener" 
+                           style="color: #a1d2ff; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; border: 1px solid #0b3d60; border-radius: 4px; transition: all 0.3s ease;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            View soft copies of achievements
+                        </a>
+                    </p>
+                    <div class="achievements-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                        <div class="card achievement-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="achievement-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>🏆</span> 1st Prize – Lean Start-up and Bootcamp
+                            </h3>
+                            <p class="achievement-description" style="color: #e6f3ff; line-height: 1.6;">
+                                Won first place in an Idea Pitching competition for designing a business model based on the Unmanned Combat Ground Vehicle (UGCV).
+                            </p>
+                        </div>
+
+                        <div class="card achievement-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="achievement-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>💻</span> Hackathon Participation – S.P.I.T. Hackathon 2025
+                            </h3>
+                            <p class="achievement-description" style="color: #e6f3ff; line-height: 1.6;">
+                                Participated in a technical hackathon hosted by Sardar Patel Institute of Technology, Mumbai, showcasing collaboration and rapid development skills.
+                            </p>
+                        </div>
+
+                        <div class="card achievement-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="achievement-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>🚀</span> Innovation Showcase – Prakalpa 2024
+                            </h3>
+                            <p class="achievement-description" style="color: #e6f3ff; line-height: 1.6;">
+                                Presented innovative technical solutions and working projects during the annual Prakalpa exhibition at KJ Somaiya College of Engineering.
+                            </p>
+                        </div>
+
+                        <div class="card achievement-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="achievement-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>⚡</span> LeetCode Achievements
+                            </h3>
+                            <p class="achievement-description" style="color: #e6f3ff; line-height: 1.6;">
+                                Earned 100 Days and 50 Days Coding Challenge Badges.<br>
+                                LeetCode Rank: Under 500,000, reflecting consistent problem-solving practice.
+                            </p>
+                        </div>
+
+                        <div class="card achievement-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="achievement-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>📊</span> GeeksforGeeks Ranking
+                            </h3>
+                            <p class="achievement-description" style="color: #e6f3ff; line-height: 1.6;">
+                                Ranked Top 150 in the entire institute (TCET) for active participation, coding challenges, and content contributions.
+                            </p>
+                        </div>
+
+                        <div class="card achievement-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="achievement-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>🌱</span> Nestlé E-Learning – Sustainability Program
+                            </h3>
+                            <p class="achievement-description" style="color: #e6f3ff; line-height: 1.6;">
+                                Completed Nestlé's official E-Learning course on Sustainability (2025), gaining awareness of environmental and social impact practices.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications Section -->
+                <section id="certifications" class="section fade-up" aria-label="Certifications">
+                    <h2 class="section-title">Certifications</h2>
+                    <p class="section-subtitle">
+                        <a href="https://drive.google.com/drive/folders/1-PjHm00MxrF8yHdGFvdPKukcORtOgwxf?usp=sharing" 
+                           target="_blank" 
+                           rel="noopener" 
+                           style="color: #a1d2ff; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; border: 1px solid #0b3d60; border-radius: 4px; transition: all 0.3s ease;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            View soft copies of certifications
+                        </a>
+                    </p>
+                    <div class="certifications-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+
+                        <div class="card certification-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="certification-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>📜</span> Applied Linear Algebra in AI and ML
+                            </h3>
+                            <p class="certification-issuer" style="color: #e6f3ff; font-size: 0.9rem;">Spoken Tutorial Project – NPTEL</p>
+                        </div>
+
+                        <div class="card certification-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="certification-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>📜</span> Java Training Certification
+                            </h3>
+                            <p class="certification-issuer" style="color: #e6f3ff; font-size: 0.9rem;">Spoken Tutorial Project – IIT Bombay (March 2024)</p>
+                        </div>
+
+                        <div class="card certification-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="certification-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>🌐</span> HTML, JavaScript & Bootstrap
+                            </h3>
+                            <p class="certification-issuer" style="color: #e6f3ff; font-size: 0.9rem;">Udemy Certification Course</p>
+                        </div>
+
+                        <div class="card certification-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="certification-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>⚡</span> Data Structures and OOP with C++
+                            </h3>
+                            <p class="certification-issuer" style="color: #e6f3ff; font-size: 0.9rem;">Udemy Course</p>
+                        </div>
+
+                        <div class="card certification-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="certification-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>🐍</span> 2025 Python Bootcamp
+                            </h3>
+                            <p class="certification-issuer" style="color: #e6f3ff; font-size: 0.9rem;">Udemy Course</p>
+                        </div>
+
+                        <div class="card certification-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="certification-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>📚</span> Data Structures Algorithm DSA
+                            </h3>
+                            <p class="certification-issuer" style="color: #e6f3ff; font-size: 0.9rem;">LeetCode + Udemy Course</p>
+                            </div>
+
+                        <div class="card certification-card" style="background: rgba(11, 61, 96, 0.1); border: 1px solid rgba(161, 210, 255, 0.1); padding: 1.5rem; transition: transform 0.3s ease;">
+                            <h3 class="certification-title" style="color: #a1d2ff; font-size: 1.2rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                                <span>🚀</span> Python & Django – Complete Web Development
+                            </h3>
+                            <p class="certification-issuer" style="color: #e6f3ff; font-size: 0.9rem;">Udemy, 35 Hours of Learning</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact" class="section fade-up" aria-label="Contact">
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="contact-container">
+                        <!-- Contact Info -->
+                        <div class="contact-info">
+                            <p class="contact-text">
+                                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out through any of these channels:
+                            </p>
+                            <div class="contact-methods">
+                                <a href="mailto:us101741@gmail.com" class="contact-method">
+                                    <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="Email" class="icon" style="width: 24px; height: 24px; object-fit: contain;">
+                                    <span>us101741@gmail.com</span>
+                                </a>
+                                <a href="tel:+919619290827" class="contact-method">
+                                    <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn" class="icon" style="width: 24px; height: 24px; object-fit: contain;">
+                                    <span>+91 9619290827</span>
+                                </a>
+                                <a href="https://github.com/Utsav-Singh-35" target="_blank" rel="noopener" class="contact-method">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon" style="width: 24px; height: 24px; object-fit: contain; filter: invert(1);">
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://linkedin.com/in/utsav-singh-11400a329" target="_blank" rel="noopener" class="contact-method">
+                                    <img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn" class="icon" style="width: 24px; height: 24px; object-fit: contain;">
+                                    <span>LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contact-form">
+                            <input type="hidden" name="access_key" value="3e4ed532-1e8f-43b3-8330-f1d0b5166d91">
+                            <input type="hidden" name="subject" value="New Contact Form Submission">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <div id="result" class="form-result"></div>
+
+                            <button type="submit" class="submit-btn">
+                                <span>Send Message</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
