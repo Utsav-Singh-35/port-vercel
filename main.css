@@ -144,7 +144,9 @@ body::before {
 }
 
 /* Enhanced section headings */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--white);
     font-weight: 600;
     line-height: 1.1;
@@ -156,7 +158,8 @@ h1, h2, h3 {
     display: inline-block;
 }
 
-h1::after, h2::after {
+h1::after,
+h2::after {
     content: '';
     position: absolute;
     bottom: -4px;
@@ -167,7 +170,8 @@ h1::after, h2::after {
     transition: width 0.3s ease;
 }
 
-h1:hover::after, h2:hover::after {
+h1:hover::after,
+h2:hover::after {
     width: 100%;
 }
 
@@ -308,6 +312,7 @@ h1:hover::after, h2:hover::after {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -648,6 +653,8 @@ h1:hover::after, h2:hover::after {
 .experience-card {
     display: grid;
     gap: 1.5rem;
+
+    background-color: rgba(11, 61, 96, 0.1);
     padding: 1.5rem;
 }
 
@@ -662,7 +669,7 @@ h1:hover::after, h2:hover::after {
     font-size: 0.875rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: var(--slate);
+    /* color: var(--slate); */
 }
 
 @media (min-width: 640px) {
@@ -1072,8 +1079,8 @@ h1:hover::after, h2:hover::after {
     transform: translateY(-2px);
 }
 
-.form-group input:focus + label,
-.form-group textarea:focus + label {
+.form-group input:focus+label,
+.form-group textarea:focus+label {
     color: #60a5fa;
     transform: translateY(-2px);
 }
@@ -1145,10 +1152,27 @@ h1:hover::after, h2:hover::after {
 }
 
 @keyframes shake {
-    10%, 90% { transform: translateX(-1px); }
-    20%, 80% { transform: translateX(2px); }
-    30%, 50%, 70% { transform: translateX(-4px); }
-    40%, 60% { transform: translateX(4px); }
+
+    10%,
+    90% {
+        transform: translateX(-1px);
+    }
+
+    20%,
+    80% {
+        transform: translateX(2px);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translateX(-4px);
+    }
+
+    40%,
+    60% {
+        transform: translateX(4px);
+    }
 }
 
 .form-group input:invalid:focus,
@@ -1166,6 +1190,7 @@ h1:hover::after, h2:hover::after {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1379,32 +1404,40 @@ h1:hover::after, h2:hover::after {
     }
 
     .layout {
-        flex-direction: column; /* Stack layout elements */
+        flex-direction: column;
+        /* Stack layout elements */
     }
 
-     .header {
-        position: relative; /* Remove sticky position */
-        padding: 1rem 2rem; /* Adjust padding */
-        display: flex; /* Keep header items in a row */
+    .header {
+        position: relative;
+        /* Remove sticky position */
+        padding: 1rem 2rem;
+        /* Adjust padding */
+        display: flex;
+        /* Keep header items in a row */
         justify-content: space-between;
         align-items: center;
-        width: 100%; /* Header takes full width */
+        width: 100%;
+        /* Header takes full width */
     }
 
     .header-content {
-         flex-direction: row; /* Social icons and text in a row */
-         align-items: center;
-         text-align: left;
-         flex-grow: 1;
+        flex-direction: row;
+        /* Social icons and text in a row */
+        align-items: center;
+        text-align: left;
+        flex-grow: 1;
     }
 
     .social-icons {
-        margin-bottom: 0; /* Remove bottom margin */
-        margin-right: 1.5rem; /* Adjust spacing */
+        margin-bottom: 0;
+        /* Remove bottom margin */
+        margin-right: 1.5rem;
+        /* Adjust spacing */
         justify-content: flex-start;
     }
 
-     .header-text {
+    .header-text {
         text-align: left;
     }
 
@@ -1424,20 +1457,25 @@ h1:hover::after, h2:hover::after {
     }
 
     .nav {
-        display: none; /* Hide navigation in this range */
+        display: none;
+        /* Hide navigation in this range */
     }
 
     .nav-list {
-        flex-direction: row; /* Arrange nav items in a row */
-        justify-content: center; /* Center nav items */
-        gap: 2rem; /* Adjust spacing */
+        flex-direction: row;
+        /* Arrange nav items in a row */
+        justify-content: center;
+        /* Center nav items */
+        gap: 2rem;
+        /* Adjust spacing */
     }
 
     .nav-link {
         flex-direction: row;
         align-items: center;
         padding: 0.5rem;
-        width: auto; /* Allow nav links to take natural width */
+        width: auto;
+        /* Allow nav links to take natural width */
     }
 
     .nav-indicator {
@@ -1446,12 +1484,13 @@ h1:hover::after, h2:hover::after {
         margin-right: 0.5rem;
     }
 
-     .nav-text {
+    .nav-text {
         font-size: 1rem;
-     }
+    }
 
     .main-content {
-        margin-left: 0; /* Remove left margin */
+        margin-left: 0;
+        /* Remove left margin */
         padding: 2rem 0;
     }
 
@@ -1478,11 +1517,13 @@ h1:hover::after, h2:hover::after {
     }
 
     .project-card {
-        margin-bottom: 0; /* Remove bottom margin */
+        margin-bottom: 0;
+        /* Remove bottom margin */
     }
 
     .project-image {
-        height: 250px; /* Adjust image height */
+        height: 250px;
+        /* Adjust image height */
     }
 
     .contact-container {
@@ -1510,40 +1551,56 @@ h1:hover::after, h2:hover::after {
 /* Desktop and larger tablets */
 @media (min-width: 1025px) and (max-width: 1277px) {
     .container {
-        padding: 0 4rem; /* Slightly increased padding for this range */
+        padding: 0 4rem;
+        /* Slightly increased padding for this range */
         max-width: 1300px;
     }
 
     .layout {
-        flex-direction: column; /* Stack header and main content vertically */
-        gap: 2rem; /* Add gap between header and main content */
+        flex-direction: column;
+        /* Stack header and main content vertically */
+        gap: 2rem;
+        /* Add gap between header and main content */
         /* padding-left: 2rem
         padding-right: 2rem; */
     }
 
     .header {
-        position: relative; /* Make header non-sticky */
-        top: auto; /* Remove top positioning */
-        align-self: auto; /* Remove align-self */
-        padding: 2rem 0; /* Adjust padding */
-        width: 100%; /* Header takes full width */
+        position: relative;
+        /* Make header non-sticky */
+        top: auto;
+        /* Remove top positioning */
+        align-self: auto;
+        /* Remove align-self */
+        padding: 2rem 0;
+        /* Adjust padding */
+        width: 100%;
+        /* Header takes full width */
         flex-shrink: 0;
-        display: flex; /* Use flexbox for header content alignment */
-        justify-content: center; /* Center header content */
-        align-items: center; /* Vertically align header content */
+        display: flex;
+        /* Use flexbox for header content alignment */
+        justify-content: center;
+        /* Center header content */
+        align-items: center;
+        /* Vertically align header content */
     }
 
     .header-content {
-        flex-direction: row; /* Arrange social icons and text in a row */
-        align-items: center; /* Vertically align items within header-content */
+        flex-direction: row;
+        /* Arrange social icons and text in a row */
+        align-items: center;
+        /* Vertically align items within header-content */
         text-align: left;
         flex-grow: 0;
     }
 
     .social-icons {
-        margin-bottom: 0; /* Remove bottom margin */
-        margin-right: 2rem; /* Add space between icons and text */
-        justify-content: center; /* Center social icons */
+        margin-bottom: 0;
+        /* Remove bottom margin */
+        margin-right: 2rem;
+        /* Add space between icons and text */
+        justify-content: center;
+        /* Center social icons */
     }
 
     .header-text {
@@ -1566,7 +1623,8 @@ h1:hover::after, h2:hover::after {
     }
 
     .nav {
-         display: none; /* Keep nav hidden in this range */
+        display: none;
+        /* Keep nav hidden in this range */
     }
 
     .nav-list {
@@ -1588,9 +1646,9 @@ h1:hover::after, h2:hover::after {
         margin-right: 0.5rem;
     }
 
-     .nav-text {
+    .nav-text {
         font-size: 1rem;
-     }
+    }
 
     .main-content {
         margin-left: 0;
@@ -1613,20 +1671,20 @@ h1:hover::after, h2:hover::after {
         gap: 2rem;
     }
 
-     .skills-card,
-     .project-card,
-     .contact-method,
-     .contact-form {
+    .skills-card,
+    .project-card,
+    .contact-method,
+    .contact-form {
         padding: 1.5rem;
-     }
+    }
 
-     .project-image {
+    .project-image {
         height: 200px;
-     }
+    }
 
-     .contact-container {
+    .contact-container {
         padding: 2rem;
-     }
+    }
 
     .form-group {
         margin-bottom: 1.5rem;
@@ -1689,7 +1747,8 @@ h1:hover::after, h2:hover::after {
 }
 
 /* High-DPI screens */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
     .card {
         border-width: 0.5px;
     }
@@ -1697,6 +1756,7 @@ h1:hover::after, h2:hover::after {
 
 /* Print styles */
 @media print {
+
     .nav,
     .social-icons,
     .contact-form {
@@ -1710,4 +1770,4 @@ h1:hover::after, h2:hover::after {
     .main-content {
         margin: 0;
     }
-} 
+}
