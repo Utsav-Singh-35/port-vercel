@@ -9,7 +9,7 @@ A clean and responsive personal portfolio showcasing my projects, skills, achiev
 - Fast & SEO-friendly
 
 ## 🛠 Tech Stack
-HTML • CSS • JavaScript (add React / Tailwind if used)
+HTML • CSS • JavaScript
 
 ## ▶️ Run Locally
 git clone https://github.com/<username>/<repo-name>.git  
