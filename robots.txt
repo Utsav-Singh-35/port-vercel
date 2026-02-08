@@ -1,0 +1,10 @@
+# robots.txt for Utsav Singh Portfolio
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://utsavsingh35.vercel.app/sitemap.xml
+
+# Disallow admin or private directories (if any)
+# Disallow: /admin/
+# Disallow: /private/
